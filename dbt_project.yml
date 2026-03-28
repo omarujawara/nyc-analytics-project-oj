@@ -38,16 +38,16 @@ models:
         +schema: nyc_transit_restaurants_staging
         # Models in models/assignment_work/staging/ go to this schema
 
-    marts: # folder/path: model/mart
-      +materialized: table    # Redundant: already inherited from nyc_analytics
-      +schema: nyc_transit_restaurants_marts
-      # Models in models/marts/ go to this schema
-
-      shared: # folder/path: model/mart/shared
-        +materialized: table  # Redundant: inherited from marts and nyc_analytics
-
-      open_restaurant_apps: # folder/path: model/open_restaurant_apps
+      marts: # folder/path: model/mart
         +materialized: table    # Redundant: already inherited from nyc_analytics
+        +schema: nyc_transit_restaurants_marts
+        # Models in models/marts/ go to this schema
 
-      dot_311: # folder/path: model/dot_311
-        +materialized: table    # Redundant: already inherited from nyc_analytics
+        shared: # folder/path: model/mart/shared
+          +materialized: table  # Redundant: inherited from marts and nyc_analytics
+
+        open_restaurant_apps: # folder/path: model/open_restaurant_apps
+          +materialized: table    # Redundant: already inherited from nyc_analytics
+
+        dot_311: # folder/path: model/dot_311
+          +materialized: table    # Redundant: already inherited from nyc_analytics
