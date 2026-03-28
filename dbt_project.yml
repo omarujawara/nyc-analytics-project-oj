@@ -46,8 +46,8 @@ models:
       shared: # folder/path: model/mart/shared
         +materialized: table  # Redundant: inherited from marts and nyc_analytics
 
-    open_restaurant_apps: # folder/path: model/open_restaurant_apps
-      +materialized: table    # Redundant: already inherited from nyc_analytics
+      open_restaurant_apps: # folder/path: model/open_restaurant_apps
+        +materialized: table    # Redundant: already inherited from nyc_analytics
 
-    dot_311: # folder/path: model/dot_311
-      +materialized: table    # Redundant: already inherited from nyc_analytics
+      dot_311: # folder/path: model/dot_311
+        +materialized: table    # Redundant: already inherited from nyc_analytics
